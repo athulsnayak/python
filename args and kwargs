@@ -1,0 +1,12 @@
+#args
+def fun1(*argv):
+	for arg in argv:
+		print(arg)
+fun1('Hello', 'World')
+
+#kwargs
+def fun2(**kwargs):
+	for key, value in kwargs.items():
+		print("%s == %s" % (key, value))
+fun2(first='Hello', mid='Welcome', last='to Programming')
+
